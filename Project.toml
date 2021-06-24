@@ -1,0 +1,25 @@
+name = "LCSO"
+uuid = "b66076ac-575f-47ff-93e2-9c43ffc8d39e"
+authors = ["Nicholas Moehle", "Ellis Brown", "Mykel J. Kochenderfer"]
+version = "0.1.0"
+
+[deps]
+LDLFactorizations = "40e66cde-538c-5869-a4ad-c39174c6795b"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+Parameters = "d96e819e-fc66-5662-9728-84c9c7592b0a"
+PiecewiseQuadratics = "63c5698c-79a9-4248-aa10-bd2a91651b58"
+SparseArrays = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"
+Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
+
+[compat]
+LDLFactorizations = "0.8"
+Parameters = "0.12"
+julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+Convex = "f65535da-76fb-5f13-bab9-19810c17039a"
+ECOS = "e2685f51-7e38-5353-a97d-a921fd2c8199"
+
+[targets]
+test = ["Test", "Convex", "ECOS"]

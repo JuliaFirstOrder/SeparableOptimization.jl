@@ -1,0 +1,4 @@
+# Configuration file for JuliaFormatter.jl
+# For more information, see: https://domluna.github.io/JuliaFormatter.jl/stable/config/
+
+style = "yas"
