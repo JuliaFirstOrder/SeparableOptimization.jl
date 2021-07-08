@@ -1,5 +1,12 @@
 # LCSO.jl
 
+[![Build status](https://github.com/JuliaFirstOrder/LCSO.jl/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/JuliaFirstOrder/LCSO.jl/actions?query=workflow%3ACI+branch%3Amain)
+[![codecov](https://codecov.io/gh/JuliaFirstOrder/LCSO.jl/branch/main/graph/badge.svg?token=Cz8LGxvzwx)](https://codecov.io/gh/JuliaFirstOrder/LCSO.jl)
+
+[![](https://img.shields.io/badge/docs-stable-blue.svg)](https://juliafirstorder.github.io/LCSO.jl/stable)
+[![](https://img.shields.io/badge/docs-latest-blue.svg)](https://juliafirstorder.github.io/LCSO.jl/latest)
+
+
 **LCSO.jl** is a [Julia](http://julialang.org) package that solves **L**inearly **C**onstrained **S**eparable **O**ptimization Problems.
 
 
@@ -16,7 +23,7 @@ where:
 * `P` is an `n x n` positive semidefinite matrix.
 * `q` is an `n`-vector.
 * `x`, the decision variable, is an `n`-vector.
-* `g_i` is a piecewise quadratic function, as specified in the PiecewiseQuadratics.jl package.
+* `g_i` is a piecewise quadratic function, specified via [PiecewiseQuadratics.jl](https://github.com/JuliaFirstOrder/PiecewiseQuadratics.jl).
 
 The algorithm used is the alternating direction method of multipliers (ADMM).  This method reaches moderate accuracy very quickly, but often requires some tuning, which may need to be done by hand.  This package is therefore best used by someone looking to solve a family of similar optimization problems with excellent performance, even when the function $g_i$ is very complicated.
 

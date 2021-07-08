@@ -27,10 +27,16 @@ DocMeta.setdocmeta!(LCSO, :DocTestSetup, :(using LCSO, PiecewiseQuadratics); rec
 makedocs(
     sitename = "LCSO.jl",
     authors = "Nick Moehle, Ellis Brown, Mykel Kochenderfer",
+    repo = "github.com/JuliaFirstOrder/LCSO.jl.git",
     modules = [LCSO],
     format = Documenter.HTML(prettyurls = get(ENV, "CI", nothing) == "true"),
     pages = [
         "index.md",
         "api.md"
     ]
+)
+
+deploydocs(;
+    repo = "github.com/JuliaFirstOrder/LCSO.jl.git",
+    devbranch = "main",
 )
