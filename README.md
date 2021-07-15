@@ -4,7 +4,7 @@
 [![codecov](https://codecov.io/gh/JuliaFirstOrder/LCSO.jl/branch/main/graph/badge.svg?token=Cz8LGxvzwx)](https://codecov.io/gh/JuliaFirstOrder/LCSO.jl)
 
 [![](https://img.shields.io/badge/docs-stable-blue.svg)](https://juliafirstorder.github.io/LCSO.jl/stable)
-[![](https://img.shields.io/badge/docs-latest-blue.svg)](https://juliafirstorder.github.io/LCSO.jl/latest)
+[![](https://img.shields.io/badge/docs-dev-blue.svg)](https://juliafirstorder.github.io/LCSO.jl/dev)
 
 
 **LCSO.jl** is a [Julia](http://julialang.org) package that solves **L**inearly **C**onstrained **S**eparable **O**ptimization Problems.
