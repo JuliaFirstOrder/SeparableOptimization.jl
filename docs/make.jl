@@ -39,4 +39,5 @@ makedocs(
 deploydocs(;
     repo = "github.com/JuliaFirstOrder/LCSO.jl.git",
     devbranch = "main",
+    push_preview = true,
 )
