@@ -15,7 +15,7 @@ limitations under the License.
 =#
 
 @testset "Identity constrained QP" begin
-    P = I(4)
+    P = Diagonal(trues(4))
     q = ones(4)
     A = spzeros(1, 4)
     b = [1.0]
