@@ -22,8 +22,8 @@ using Documenter
 using Test
 
 @testset "Doctests" begin
-    DocMeta.setdocmeta!(SeparableOptimization, :DocTestSetup, :(using SeparableOptimization, PiecewiseQuadratics);
-                        recursive=true)
+    DocMeta.setdocmeta!(SeparableOptimization, :DocTestSetup,
+                        :(using SeparableOptimization, PiecewiseQuadratics); recursive=true)
     doctest(SeparableOptimization)
 end
 
