@@ -15,7 +15,8 @@ SparseArrays = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"
 Documenter = "0.27"
 LDLFactorizations = "0.8"
 Parameters = "0.12"
-julia = "1"
+PiecewiseQuadratics = "0.1"
+julia = "^1"
 
 [extras]
 Convex = "f65535da-76fb-5f13-bab9-19810c17039a"
