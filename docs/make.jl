@@ -17,18 +17,18 @@ limitations under the License.
 push!(LOAD_PATH, "../src/")
 
 using Documenter
-using LCSO
+using SeparableOptimization
 using PiecewiseQuadratics
 
 
-DocMeta.setdocmeta!(LCSO, :DocTestSetup, :(using LCSO, PiecewiseQuadratics); recursive=true)
+DocMeta.setdocmeta!(SeparableOptimization, :DocTestSetup, :(using SeparableOptimization, PiecewiseQuadratics); recursive=true)
 
 
 makedocs(
-    sitename = "LCSO.jl",
+    sitename = "SeparableOptimization.jl",
     authors = "Nick Moehle, Ellis Brown, Mykel Kochenderfer",
-    repo = "github.com/JuliaFirstOrder/LCSO.jl.git",
-    modules = [LCSO],
+    repo = "github.com/JuliaFirstOrder/SeparableOptimization.jl.git",
+    modules = [SeparableOptimization],
     format = Documenter.HTML(prettyurls = get(ENV, "CI", nothing) == "true"),
     pages = [
         "index.md",
@@ -37,7 +37,7 @@ makedocs(
 )
 
 deploydocs(;
-    repo = "github.com/JuliaFirstOrder/LCSO.jl.git",
+    repo = "github.com/JuliaFirstOrder/SeparableOptimization.jl.git",
     devbranch = "main",
     push_preview = true,
 )

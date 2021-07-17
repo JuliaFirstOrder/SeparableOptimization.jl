@@ -1,13 +1,13 @@
-# LCSO.jl
+# SeparableOptimization.jl
 
-[![Build status](https://github.com/JuliaFirstOrder/LCSO.jl/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/JuliaFirstOrder/LCSO.jl/actions?query=workflow%3ACI+branch%3Amain)
-[![codecov](https://codecov.io/gh/JuliaFirstOrder/LCSO.jl/branch/main/graph/badge.svg?token=Cz8LGxvzwx)](https://codecov.io/gh/JuliaFirstOrder/LCSO.jl)
+[![Build status](https://github.com/JuliaFirstOrder/SeparableOptimization.jl/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/JuliaFirstOrder/SeparableOptimization.jl/actions?query=workflow%3ACI+branch%3Amain)
+[![codecov](https://codecov.io/gh/JuliaFirstOrder/SeparableOptimization.jl/branch/main/graph/badge.svg?token=Cz8LGxvzwx)](https://codecov.io/gh/JuliaFirstOrder/SeparableOptimization.jl)
 
-[![](https://img.shields.io/badge/docs-stable-blue.svg)](https://juliafirstorder.github.io/LCSO.jl/stable)
-[![](https://img.shields.io/badge/docs-dev-blue.svg)](https://juliafirstorder.github.io/LCSO.jl/dev)
+[![](https://img.shields.io/badge/docs-stable-blue.svg)](https://juliafirstorder.github.io/SeparableOptimization.jl/stable)
+[![](https://img.shields.io/badge/docs-dev-blue.svg)](https://juliafirstorder.github.io/SeparableOptimization.jl/dev)
 
 
-**LCSO.jl** is a [Julia](http://julialang.org) package that solves **L**inearly **C**onstrained **S**eparable **O**ptimization Problems.
+**SeparableOptimization.jl** is a [Julia](http://julialang.org) package that solves Linearly Constrained Separable Optimization Problems.
 
 
 The package currently supports quadratic-plus-separable problems of the form
@@ -39,14 +39,14 @@ This package and [PiecewiseQuadratics.jl](https://github.com/JuliaFirstOrder/Pie
 Use Julia's builtin package manager [Pkg](https://docs.julialang.org/en/v1/stdlib/Pkg/) to install.
 From a Julia REPL:
 ```Julia
-] add LCSO
+] add SeparableOptimization
 ```
 
 ## Example
-Let's use LCSO to solve an example problem.
+Let's use SeparableOptimization to solve an example problem.
 
 ```Julia
-using LCSO
+using SeparableOptimization
 using PiecewiseQuadratics
 using LinearAlgebra
 

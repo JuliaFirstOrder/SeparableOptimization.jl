@@ -15,7 +15,7 @@ limitations under the License.
 =#
 
 @testset "Identity constrained QP" begin
-    P = I(4)
+    P = Diagonal(trues(4))  # === I(4) in 1.2+
     q = ones(4)
     A = spzeros(1, 4)
     b = [1.0]
@@ -28,7 +28,7 @@ limitations under the License.
 end
 
 @testset "Diag constrained QP" begin
-    P = spdiagm(1:4)
+    P = spdiagm(0 => 1:4)
     q = Vector{Float64}(1:4)
     A = spzeros(1, 4) .+ 1
     b = [1.0]

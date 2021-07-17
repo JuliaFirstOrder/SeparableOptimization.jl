@@ -189,7 +189,7 @@ The fields represent:
 
 # Notes:
 * We keep the previous values of `x`, `w`, `z`, `y` in order to check for convergence.
-* The actual problem we are solving here is detailed in [`LCSO.factorize_kkt`](@ref)
+* The actual problem we are solving here is detailed in [`SeparableOptimization.factorize_kkt`](@ref)
 * `w` and `y` are used when minimizing the augmented Lagrangian of the original problem (and consequently
   in ADMM's update rules)
 """
