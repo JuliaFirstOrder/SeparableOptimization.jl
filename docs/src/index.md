@@ -14,7 +14,6 @@ The package currently supports quadratic-plus-separable problems of the form
 ```
 
 where:
-* ``\LaTeX``
 * ``x \in \bf R^n`` is the decision variable
 * ``A \in \bf R^{m\times n}`` is a sparse matrix
 * ``b \in \bf R^m``
@@ -82,9 +81,9 @@ settings = Settings(; ρ=ones(m), σ=ones(n), compute_stats=true)
 
 vars, stats = optimize(params, settings)
 
-print("optimal x: ", vars.x)
-print("final obj: ", stats.obj[stats.iters])
-print("final res: ", stats.res[stats.iters])
+println("optimal x: ", vars.x)
+println("final obj: ", stats.obj[stats.iters])
+println("final res: ", stats.res[stats.iters])
 ```
 
 ## Authors
