@@ -1,4 +1,4 @@
-name = "LCSO"
+name = "SeparableOptimization"
 uuid = "b66076ac-575f-47ff-93e2-9c43ffc8d39e"
 authors = ["Nicholas Moehle", "Ellis Brown", "Mykel J. Kochenderfer"]
 version = "0.1.0"

@@ -1,6 +1,6 @@
-# LCSO.jl
+# SeparableOptimization.jl
 
-**LCSO.jl** is a [Julia](http://julialang.org) package that solves **L**inearly **C**onstrained **S**eparable **O**ptimization Problems.
+**SeparableOptimization.jl** is a [Julia](http://julialang.org) package that solves Linearly Constrained Separable Optimization Problems.
 
 
 The package currently supports quadratic-plus-separable problems of the form
@@ -37,14 +37,14 @@ Depth = 2
 Use Julia's builtin package manager [Pkg](https://docs.julialang.org/en/v1/stdlib/Pkg/) to install.
 From a Julia REPL:
 ```Julia
-] add LCSO
+] add SeparableOptimization
 ```
 
 ## Example
-Let's use LCSO to solve an example problem.
+Let's use SeparableOptimization to solve an example problem.
 
 ```@example 1
-using LCSO
+using SeparableOptimization
 using PiecewiseQuadratics
 using LinearAlgebra
 

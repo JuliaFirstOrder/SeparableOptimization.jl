@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 =#
 
-using LCSO
+using SeparableOptimization
 using PiecewiseQuadratics
 using LinearAlgebra
 using SparseArrays
@@ -22,9 +22,9 @@ using Documenter
 using Test
 
 @testset "Doctests" begin
-    DocMeta.setdocmeta!(LCSO, :DocTestSetup, :(using LCSO, PiecewiseQuadratics);
+    DocMeta.setdocmeta!(SeparableOptimization, :DocTestSetup, :(using SeparableOptimization, PiecewiseQuadratics);
                         recursive=true)
-    doctest(LCSO)
+    doctest(SeparableOptimization)
 end
 
 @testset "ADMM Structs" begin

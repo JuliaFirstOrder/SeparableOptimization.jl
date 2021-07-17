@@ -28,7 +28,7 @@ limitations under the License.
 end
 
 @testset "Diag constrained QP" begin
-    P = spdiagm(1:4)
+    P = spdiagm(0 => 1:4)
     q = Vector{Float64}(1:4)
     A = spzeros(1, 4) .+ 1
     b = [1.0]

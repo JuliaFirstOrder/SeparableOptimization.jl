@@ -11,7 +11,7 @@ When filing an issue, make sure to answer these five questions:
 
 Open an issue. Please include descriptions of the following:
 - The version of Julia that you are running
-- The version of LCSO.jl that you are running
+- The version of SeparableOptimization.jl that you are running
 - Observations
 - Expectations
 - Steps to reproduce
@@ -48,6 +48,6 @@ Code coverage can be generated locally using the [LocalCoverage.jl](https://gith
 2. generate coverage
   ```julia
   using LocalCoverage
-  generate_coverage("LCSO")
+  generate_coverage("SeparableOptimization")
   ```
-3. open coverage report html `open_coverage("LCSO")`
+3. open coverage report html `open_coverage("SeparableOptimization")`
