@@ -3,8 +3,8 @@
 [![Build status](https://github.com/JuliaFirstOrder/SeparableOptimization.jl/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/JuliaFirstOrder/SeparableOptimization.jl/actions?query=workflow%3ACI+branch%3Amain)
 [![codecov](https://codecov.io/gh/JuliaFirstOrder/SeparableOptimization.jl/branch/main/graph/badge.svg?token=Cz8LGxvzwx)](https://codecov.io/gh/JuliaFirstOrder/SeparableOptimization.jl)
 
-[![](https://img.shields.io/badge/docs-stable-blue.svg)](https://juliafirstorder.github.io/SeparableOptimization.jl/stable)
-[![](https://img.shields.io/badge/docs-dev-blue.svg)](https://juliafirstorder.github.io/SeparableOptimization.jl/dev)
+[![](https://img.shields.io/badge/docs-stable-blue.svg)](https://juliafirstorder.github.io/SeparableOptimization.jl/stable/)
+[![](https://img.shields.io/badge/docs-dev-blue.svg)](https://juliafirstorder.github.io/SeparableOptimization.jl/dev/)
 
 
 **SeparableOptimization.jl** is a [Julia](http://julialang.org) package that solves Linearly Constrained Separable Optimization Problems.
@@ -25,7 +25,7 @@ where:
 * `x`, the decision variable, is an `n`-vector.
 * `g_i` is a piecewise quadratic function, specified via [PiecewiseQuadratics.jl](https://github.com/JuliaFirstOrder/PiecewiseQuadratics.jl).
 
-The algorithm used is the alternating direction method of multipliers (ADMM).  This method reaches moderate accuracy very quickly, but often requires some tuning, which may need to be done by hand.  This package is therefore best used by someone looking to solve a family of similar optimization problems with excellent performance, even when the function $g_i$ is very complicated.
+The algorithm used is the alternating direction method of multipliers (ADMM).  This method reaches moderate accuracy very quickly, but often requires some tuning, which may need to be done by hand.  This package is therefore best used by someone looking to solve a family of similar optimization problems with excellent performance, even when the function `g_i` is very complicated.
 
 ### Authors
 This package and [PiecewiseQuadratics.jl](https://github.com/JuliaFirstOrder/PiecewiseQuadratics.jl) were originally developed by [Nicholas Moehle](https://www.nicholasmoehle.com/), [Ellis Brown](http://ellisbrown.github.io), and [Mykel Kochenderfer](https://mykel.kochenderfer.com/) at BlackRock AI Labs.  They were developed to produce the results in the following paper: [arXiv:2103.05455](https://arxiv.org/abs/2103.05455).
